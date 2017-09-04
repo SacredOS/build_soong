@@ -97,8 +97,8 @@ type variableProperties struct {
 			Enabled *bool
 		}
 
-		// include sacred variables
-		*android.Product_variables
+		// include Sacred variables
+		Sacred android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -173,8 +173,8 @@ type productVariables struct {
 
 	DeviceKernelHeaders []string `json:",omitempty"`
 
-	// include sacred variables
-	*android.ProductVariables
+	// include Sacred variables
+	Sacred android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
