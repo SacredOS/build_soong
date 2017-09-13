@@ -99,6 +99,7 @@ type variableProperties struct {
 
 		// include Sacred variables
 		Sacred android.Product_variables
+		Qualcomm android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -175,6 +176,7 @@ type productVariables struct {
 
 	// include Sacred variables
 	Sacred android.ProductVariables
+	Qualcomm android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
